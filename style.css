@@ -1,0 +1,241 @@
+head {background-color: #d2f8d2;}
+.header-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display:block;
+}
+
+header > h1 {
+  color: #f2a4e5;
+  font-size: 2em;
+  text-align: center;
+  font-family: Chalkduster, fantasy;
+  font-size: 5em
+  ;
+}
+body {
+  background-color: #d2f8d2;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: block;
+  border: 2px solid #d2f8d2;
+  background-color: #d2f8d2;
+  padding: 10px;
+  position: sticky;
+  top: 50px;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.navbar ul li {
+  display:inline;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: Marker Felt, fantasy;
+}
+
+.notification {background-color: #dcccf1;
+  padding: 1.5em;
+  border-radius: 50px;
+  text-align: center;
+  width: 250px;
+  margin: 10em auto;
+  box-shadow: 0 4px 12px rgba(66, 60, 60, 0.1);
+  position: fixed;
+  top: 1%;
+  z-index:15}
+
+.notification p {
+  font-size: 1.7em;
+  color:#325356;
+  padding: 0.1em;
+  margin-bottom: 0.3px;
+  text-align: center;
+}
+
+.notification-img {
+  max-width: 20%;
+  height: auto;
+  position: float;}
+
+.email-input {
+  padding: 0.5em;
+  width: 95%;
+  border: 2px dashed #f4bfe6;
+  border-radius: 15px;
+  margin-top: 0.7em;
+}
+
+.subscribe-btn {
+  margin-top: 0.8em;
+  padding: 0.5em 1em;
+  background-color: #f8bebe;
+  border: none;
+  border-radius: 8px;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #ffcfd2;
+}
+
+
+.bubble-container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;}
+
+.about-img {
+  display:inline-block;
+  max-width:20%;
+  height: auto;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-left: -20px;
+  vertical-align: middle;
+  transition: transform 0.3s ease-in;
+}
+
+.about-img:first-child {
+  margin-left: 0;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+
+#about > h2  {
+font-size: 3em;
+  background-color: #b9dab9;
+  border-style: inset
+  border: 10px solid #4e8950;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* shadow creates “pop” */
+  font-weight: bold;
+  text-align: center;
+  font-family: Marker Felt, fantasy;
+  color: #d590ca;
+  font-size: 2.3em;
+}
+
+.about-p {
+  font-size: 1.3em;
+  margin: 20px;
+  padding: 10px;
+  text-indent: 50px;
+  line-height: 2;
+}
+
+#projects > h2 {
+  text-align: center;
+  font-family: Marker Felt, fantasy;
+  color: #e89cc1;
+  font-size: 3em;
+}
+
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  background: #a0c6af;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  width: max-content;
+  padding: 20px;
+}
+
+.project > h3 {
+  font-size: 1.5em;
+  color: #2a4b2b;
+  font-family: Marker Felt, fantasy;
+  margin-bottom: 20px;
+}
+
+.project > p {
+  font-size: 1.3em;
+}
+
+.project:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact > h2 {
+  text-align: center;
+  font-family: Marker Felt, fantasy;
+  color: #e89cc1;
+  font-size: 4em;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fbe0e6;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d590ca;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #d590ca;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ffcfd2;
+}
